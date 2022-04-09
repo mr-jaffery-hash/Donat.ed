@@ -1,0 +1,44 @@
+.avatar {
+    /* vertical-align: middle; */
+    border-radius: 50%;
+}
+
+.background{
+  background-color: #f2f2f2;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.centerImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardStyles{
+  border: .5px inset #52ab98;
+  background-color: #fef9f8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*small*/
+@media (max-width: 576px) {
+  .profileName{
+    font-size: 1.17em;
+  }
+}
+/*extra small*/
+@media (max-width: 575.98px) {
+  .profileName{
+    font-size: 1em;
+  }
+}
+/*medium*/
+@media (max-width: 768px) {
+  .profileName{
+    font-size: 1.17em;
+  }
+}
