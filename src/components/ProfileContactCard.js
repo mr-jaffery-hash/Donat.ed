@@ -20,22 +20,22 @@ const ProfileNameCard = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-sm-2">
+                <div className="col-md-2">
                 </div>
-                <div className="col-sm-5">
+                <div className="col-md-5">
                     <b>Phone</b>: {contactInformation.name}
                 </div>
-                <div className="col-sm-5 text-truncate">
+                <div className="col-md-5 text-truncate">
                     <b>Email</b>:  {contactInformation.email}
                 </div>
             </div>
             <div className="row">
-                <div className="col-sm-2">
+                <div className="col-md-2">
                 </div>
-                <div className="col-sm-5 text-truncate">
+                <div className="col-md-5 text-truncate">
                     <b>Address</b>: {contactInformation.address}
                 </div>
-                <div className="col-sm-5">
+                <div className="col-md-5">
                     <b>Phone:</b>: {contactInformation.phone}
                 </div>
             </div>

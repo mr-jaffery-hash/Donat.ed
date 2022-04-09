@@ -11,6 +11,15 @@ const ProfileEducationCard = () => {
         phone: '03322832283'
     }
 
+    const degreeInfo = {
+        certificate: 'HSSC',
+        verfied: false,
+        grade: 'A+',
+        year: '2019',
+        institution: 'Government College University',
+        details: 'I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there.I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there'
+    }
+
     return(
         <div className="cardStyles container">
             <div className="row">
@@ -20,26 +29,8 @@ const ProfileEducationCard = () => {
                     </h4>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-sm-2">
-                </div>
-                <div className="col-sm-5">
-                    <b>Phone</b>: {contactInformation.name}
-                </div>
-                <div className="col-sm-5 text-truncate">
-                    <b>Email</b>:  {contactInformation.email}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-2">
-                </div>
-                <div className="col-sm-5 text-truncate">
-                    <b>Address</b>: {contactInformation.address}
-                </div>
-                <div className="col-sm-5">
-                    <b>Phone:</b>: {contactInformation.phone}
-                </div>
-            </div>
+            <DegreeInfo DegreeInformation={degreeInfo}/>
+            <DegreeInfo DegreeInformation={degreeInfo}/>
         </div>
     )
 }
