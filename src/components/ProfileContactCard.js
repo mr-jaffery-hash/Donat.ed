@@ -14,7 +14,7 @@ const ProfileNameCard = () => {
         <div className="cardStyles container">
             <div className="row">
                 <div className="col">
-                    <h4>
+                    <h4 className="profileHeadings">
                         Contact Information
                     </h4>
                 </div>

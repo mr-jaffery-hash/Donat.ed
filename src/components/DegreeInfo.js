@@ -27,9 +27,9 @@ const DegreeInfo = ({DegreeInformation}) => {
             <div className="row">
                 <div className="col-md-2">
                 </div>
-                <div className="col-md-10 text-truncate">
+                <div className="col-md-10">
                     <b>Details</b>:
-                    <p className="text-truncate">
+                    <p className="">
                         {DegreeInformation.details}
                     </p>
                 </div> 

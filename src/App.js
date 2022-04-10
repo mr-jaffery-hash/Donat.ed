@@ -1,19 +1,9 @@
 import React from "react";
-import ProfileNavBar from "./components/ProfileNavBar";
-import ProfileNameCard from "./components/ProfileNameCard";
-import ProfileContactCard from "./components/ProfileContactCard";
-import ProfileEducationCard from "./components/ProfileEducationCard";
-
-import "./styles.css"
+import UserProfile from "./pages/UserProfile";
 
 const App = () => {
     return(
-        <div className="background">
-            <ProfileNavBar />
-            <ProfileNameCard />
-            <ProfileContactCard />
-            <ProfileEducationCard />
-        </div>
+        <UserProfile />
     )
 }
 
