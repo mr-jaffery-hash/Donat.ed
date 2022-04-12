@@ -5,6 +5,7 @@ import ProfileContactCard from "../components/ProfileContactCard";
 import ProfileEducationCard from "../components/ProfileEducationCard";
 import ConnectCard from "../components/ConnectCard";
 import CurrentNeedCard from "../components/CurrentNeedCard";
+import '../styles.css'
 
 const UserProfile = () => {
   const nameDeets = {
@@ -28,8 +29,14 @@ const UserProfile = () => {
         <div className="container">
           <ProfileContactCard contactInformation={contactInformation} />
           <ProfileEducationCard />
-          <ConnectCard />
-          <CurrentNeedCard need={Need} />
+          <div className="row cardLowerDistance">
+            <div className="col">
+              <ConnectCard />
+            </div>
+            <div className="col" style={{display:'flex'}}>
+             <CurrentNeedCard need={Need} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

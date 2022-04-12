@@ -3,7 +3,7 @@ import React from "react";
 const CurrentNeedCard = ({ need }) => {
   if (need) {
     return (
-      <div className="cardStyles container cardUpperDistance cardLowerDistance">
+      <div className="cardStyles container cardUpperDistance">
         <div className="row">
           <div className="col">
             <h4 className="profileHeadings">Current Need</h4>
