@@ -21,7 +21,7 @@ const ProfileEducationCard = () => {
     }
 
     return(
-        <div className="cardStyles container">
+        <div className="cardStyles container cardUpperDistance">
             <div className="row">
                 <div className="col">
                     <h4 className="profileHeadings">

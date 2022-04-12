@@ -4,11 +4,15 @@
 }
 
 .background{
-  background-color: #f2f2f2;
+  background-color: #fefbe9;
 }
 
 .centerText{
   text-align: center;
+}
+
+.profileName{
+  color: #f0a04b;
 }
 
 .centerImage{
@@ -18,15 +22,56 @@
 }
 
 .cardStyles{
-  border: .5px inset #52ab98;
-  background-color: #fef9f8;
-  border-radius: 5px;
+  border: 0px inset #52ab98;
+  background-color: #e1eedd;
+  border-radius: 10px;
   padding: 10px;
 }
 
-.profileHeadings{
-  color: #52ab98;
+.cardUpperDistance{
+  margin-top: 10px;
 }
+
+.cardLowerDistance{
+  margin-bottom: 10px;
+}
+
+.cardFont{
+  color: #183a1d;
+}
+
+.profileHeadings{
+  color: #183a1d;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
 
 /*dividing header*/
 hr {
@@ -41,11 +86,18 @@ hr {
   .profileName{
     font-size: 1.17em;
   }
+  .profileStatus{
+    text-align: center;
+  }
 }
 /*extra small*/
 @media (max-width: 575.98px) {
   .profileName{
     font-size: 1em;
+    text-align: center;
+  }
+  .profileStatus{
+    text-align: center;
   }
 }
 

@@ -1,46 +1,42 @@
 import React from "react";
-import "../styles.css"
+import "../styles.css";
 
-const ProfileNameCard = () => {
-
-    const contactInformation = {
-        name: 'Mohsin Raza',
-        email: 'mohsinrazajaffery@gmail.com',
-        address: 'Link 1, DHA Main Boulevard, Lahore',
-        phone: '03322832283'
-    }
-
-    return(
-        <div className="cardStyles container">
-            <div className="row">
-                <div className="col">
-                    <h4 className="profileHeadings">
-                        Contact Information
-                    </h4>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-2">
-                </div>
-                <div className="col-md-5">
-                    <b>Phone</b>: {contactInformation.name}
-                </div>
-                <div className="col-md-5 text-truncate">
-                    <b>Email</b>:  {contactInformation.email}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-2">
-                </div>
-                <div className="col-md-5 text-truncate">
-                    <b>Address</b>: {contactInformation.address}
-                </div>
-                <div className="col-md-5">
-                    <b>Phone:</b>: {contactInformation.phone}
-                </div>
-            </div>
+const ProfileNameCard = ({ contactInformation }) => {
+  return (
+    <div className="cardStyles container">
+      <div className="row">
+        <div className="col">
+          <h4 className="profileHeadings">Contact Information</h4>
         </div>
-    )
-}
+      </div>
+      <div className="row">
+        <div className="col-md-2"></div>
+        <div className="col-md-5">
+          <span className="cardFont">
+            <b>Phone</b>: {contactInformation.name}
+          </span>
+        </div>
+        <div className="col-md-5 text-truncate">
+          <span className="cardFont">
+            <b>Email</b>: {contactInformation.email}
+          </span>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-2"></div>
+        <div className="col-md-5 text-truncate">
+          <span className="cardFont">
+            <b>Address</b>: {contactInformation.address}
+          </span>
+        </div>
+        <div className="col-md-5">
+          <span className="cardFont">
+            <b>Phone:</b>: {contactInformation.phone}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default ProfileNameCard
+export default ProfileNameCard;

@@ -8,30 +8,30 @@ const DegreeInfo = ({DegreeInformation}) => {
                 <div className="col-md-2">
                 </div>
                 <div className="col-md-5 text-truncate">
-                    <b>Degree</b>: {DegreeInformation.certificate}
+                    <span className="cardFont"><b>Degree</b>: {DegreeInformation.certificate}</span>
                 </div>
                 <div className="col-md-5 text-truncate">
-                    <b>Grade</b>:  {DegreeInformation.grade}
+                <span className="cardFont"><b>Grade</b>:  {DegreeInformation.grade}</span>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-2">
                 </div>
                 <div className="col-md-5 text-truncate">
-                    <b>Year</b>: {DegreeInformation.year}
+                <span className="cardFont"> <b>Year</b>: {DegreeInformation.year}</span>
                 </div>
                 <div className="col-md-5 text-truncate">
-                    <b>Institution</b>: {DegreeInformation.institution}
+                <span className="cardFont">   <b>Institution</b>: {DegreeInformation.institution}</span>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-2">
                 </div>
                 <div className="col-md-10">
-                    <b>Details</b>:
+                <span className="cardFont"> <b>Details</b>:
                     <p className="">
                         {DegreeInformation.details}
-                    </p>
+                    </p></span>
                 </div> 
             </div>
             <hr/>
