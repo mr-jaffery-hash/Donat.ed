@@ -41,7 +41,17 @@
 }
 
 .profileHeadings{
-  color: #183a1d;
+  color: #e1eedd;
+}
+
+.left-padding-0{
+  padding-left:0;
+}
+
+.cardHeading{
+  background-color: #1e4824;
+  border: 0px solid;
+  border-radius: 10px;
 }
 
  /* Style all font awesome icons */

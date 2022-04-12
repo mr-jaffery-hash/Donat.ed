@@ -33,7 +33,7 @@ const UserProfile = () => {
             <div className="col">
               <ConnectCard />
             </div>
-            <div className="col" style={{display:'flex'}}>
+            <div className="col left-padding-0" style={{display:'flex'}}>
              <CurrentNeedCard need={Need} />
             </div>
           </div>
