@@ -1,6 +1,6 @@
 import React from "react";
 
-const CurrentNeedCard = ({ need }) => {
+const EditProfileCurrentNeedCard = ({ need }) => {
   if (need) {
     return (
       <div className="cardStyles container cardUpperDistance">
@@ -12,7 +12,9 @@ const CurrentNeedCard = ({ need }) => {
         <div className="row">
           {/* <div className="col-md-2"></div> */}
           <div className="col-md-5">
-          <span className="cardFont"><b>Amount RS</b>: {need.amount}</span>
+          <span className="cardFont"><b>Amount RS</b>: 
+          </span>
+          <input type='text' className="form-control-sm"/>
           </div>
         </div>
       </div>
@@ -20,4 +22,4 @@ const CurrentNeedCard = ({ need }) => {
   }
 };
 
-export default CurrentNeedCard;
+export default EditProfileCurrentNeedCard;

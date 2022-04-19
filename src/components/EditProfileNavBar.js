@@ -2,7 +2,7 @@ import React from "react";
 import StudentFeed from "../pages/StudentFeed";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const ProfileNavBar = () => {
+const EditProfileNavBar = () => {
   return (
     <Router>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,7 +24,7 @@ const ProfileNavBar = () => {
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a class="dropdown-item" href="#">
-                      Edit
+                      Save
                     </a>
                   </li>
                   <li>
@@ -55,4 +55,4 @@ const ProfileNavBar = () => {
   );
 };
 
-export default ProfileNavBar;
+export default EditProfileNavBar

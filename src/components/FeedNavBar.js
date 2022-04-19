@@ -1,8 +1,8 @@
 import React from "react";
-import StudentFeed from "../pages/StudentFeed";
+import StudentProfilePage from '../pages/StudentProfilePage'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const ProfileNavBar = () => {
+const FeedNavBar = () => {
   return (
     <Router>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,21 +23,16 @@ const ProfileNavBar = () => {
                 ></a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Edit
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Logout
-                    </a>
+                    <Link class="dropdown-item" to="/">
+                      Profile
+                    </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <Link class="dropdown-item" to="/studentfeed">
-                      News Feed
+                    <Link class="dropdown-item" to="/">
+                      Logout
                     </Link>
                   </li>
                 </ul>
@@ -47,12 +42,12 @@ const ProfileNavBar = () => {
         </div>
       </nav>
       <Switch>
-        <Route path="/studentfeed">
-          <StudentFeed />
+        <Route path="/">
+          <StudentProfilePage />
         </Route>
       </Switch>
     </Router>
   );
 };
 
-export default ProfileNavBar;
+export default FeedNavBar;

@@ -7,6 +7,11 @@
   background-color: #fefbe9;
 }
 
+/* input boxes of edit profile */
+.editProfileInput{
+  margin-top: 3px;
+}
+
 .centerText{
   text-align: center;
 }
@@ -26,8 +31,10 @@
   background-color: #e1eedd;
   border-radius: 10px;
   padding: 10px;
+  padding-top: 0;
 }
 
+/* distaces between cards */
 .cardUpperDistance{
   margin-top: 10px;
 }
@@ -40,6 +47,7 @@
   color: #183a1d;
 }
 
+/* heading of user profile such as contact information */
 .profileHeadings{
   color: #e1eedd;
 }
@@ -48,10 +56,13 @@
   padding-left:0;
 }
 
+/* heading of user profile such as contact information */
 .cardHeading{
-  background-color: #1e4824;
+  margin-top: 3px;
+  background-color: #90AA88;
   border: 0px solid;
   border-radius: 10px;
+  height: 40px
 }
 
  /* Style all font awesome icons */

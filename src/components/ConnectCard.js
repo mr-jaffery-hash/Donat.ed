@@ -5,7 +5,7 @@ const ConnectCard = ({profiles}) => {
     return(
         <div className="cardStyles container cardUpperDistance">
             <div className="row">
-                <div className="col-md-auto cardHeading">
+                <div className="col-md d-flex align-items-center cardHeading">
                     <h4 className="profileHeadings">
                         Connect
                     </h4>

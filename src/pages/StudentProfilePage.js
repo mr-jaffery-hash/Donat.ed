@@ -12,6 +12,26 @@ const UserProfile = () => {
     name: "Mohsin Raza Jaffery",
     status: "Looking for donations",
   };
+  const degreeInfo = [
+    {
+      certificate: "HSSC",
+      verfied: false,
+      grade: "A+",
+      year: "2019",
+      institution: "Government College University",
+      details:
+        "I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there.I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there",
+    },
+    {
+      certificate: "HSSC",
+      verfied: false,
+      grade: "A+",
+      year: "2019",
+      institution: "Government College University",
+      details:
+        "I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there.I graduated from GCU, Lahore in march 1971. There i stayed for almost 2 years. I spent good time there",
+    },
+  ];
   const contactInformation = {
     name: "Mohsin Raza",
     email: "mohsinrazajaffery@gmail.com",
@@ -28,7 +48,7 @@ const UserProfile = () => {
       <div className="container">
         <div className="container">
           <ProfileContactCard contactInformation={contactInformation} />
-          <ProfileEducationCard />
+          <ProfileEducationCard degreeInfo={degreeInfo} />
           <div className="row cardLowerDistance">
             <div className="col">
               <ConnectCard />

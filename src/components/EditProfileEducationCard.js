@@ -1,13 +1,13 @@
 import React from "react";
-import DegreeInfo from "./DegreeInfo";
+import EditDegreeInfo from "./EditDegreeInfo";
 import "../styles.css";
 
-const ProfileEducationCard = (props) => {
+const EditProfileEducationCard = (props) => {
 
   const RenderDegrees = (AllDegrees) => {
      return AllDegrees.map((Degree)=>{
       return(
-        <DegreeInfo DegreeInformation={Degree}/>
+        <EditDegreeInfo DegreeInformation={Degree}/>
       )
     })
   }
@@ -26,4 +26,4 @@ const ProfileEducationCard = (props) => {
   );
 };
 
-export default ProfileEducationCard;
+export default EditProfileEducationCard;

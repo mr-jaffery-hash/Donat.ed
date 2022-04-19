@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles.css";
 
-const ProfileNameCard = ({ contactInformation }) => {
+const ProfileContactCard = ({ contactInformation }) => {
   return (
     <div className="cardStyles container">
       <div className="row">
-        <div className="col-md-auto cardHeading">
+        <div className="col-md d-flex align-items-center cardHeading">
           <h4 className="profileHeadings">Contact Information</h4>
         </div>
       </div>
@@ -14,7 +14,7 @@ const ProfileNameCard = ({ contactInformation }) => {
           {/* <div className="col-md-2"></div> */}
           <div className="col-md-6">
             <span className="cardFont">
-              <b>Phone</b>: {contactInformation.name}
+              <b>Name</b>: {contactInformation.name}
             </span>
           </div>
           <div className="col-md-6 text-truncate">
@@ -32,7 +32,7 @@ const ProfileNameCard = ({ contactInformation }) => {
           </div>
           <div className="col-md-6">
             <span className="cardFont">
-              <b>Phone:</b>: {contactInformation.phone}
+              <b>Phone:</b> {contactInformation.phone}
             </span>
           </div>
         </div>
@@ -41,4 +41,4 @@ const ProfileNameCard = ({ contactInformation }) => {
   );
 };
 
-export default ProfileNameCard;
+export default ProfileContactCard;
