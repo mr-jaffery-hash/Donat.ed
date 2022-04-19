@@ -7,6 +7,14 @@
   background-color: #fefbe9;
 }
 
+.profilePicture{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* input boxes of edit profile */
 .editProfileInput{
   margin-top: 3px;

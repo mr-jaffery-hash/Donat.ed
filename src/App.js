@@ -10,7 +10,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/">
-            <EditStudentProfile />
+            <StudentProfilePage />
           </Route>
           <Route path="/studentfeed">
             <StudentFeed />
