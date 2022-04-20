@@ -54,7 +54,7 @@ const UserProfile = () => {
               <ConnectCard />
             </div>
             <div className="col left-padding-0" style={{display:'flex'}}>
-             <CurrentNeedCard need={Need} />
+            <CurrentNeedCard donation={Need} status ={"student"}/>
             </div>
           </div>
         </div>
