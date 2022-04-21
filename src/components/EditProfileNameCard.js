@@ -20,11 +20,13 @@ const EditProfileNameCard = ({ details }) => {
             </h6>
           </div>
           <div className="row">
+          <b>Name</b>
             <h1 className="profileName">
               <input type="text" className="form-control" />
             </h1>
           </div>
           <div className="row">
+            <b>Status:</b>
             <h6 className="profileStatus">
               <input type="text" className="form-control" />
             </h6>
