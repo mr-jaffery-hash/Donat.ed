@@ -1,5 +1,6 @@
 import React from "react";
 import StudentFeed from "../pages/StudentFeed";
+import DonarFeed from '../pages/DonorFeed'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const ProfileNavBar = () => {
