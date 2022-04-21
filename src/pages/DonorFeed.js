@@ -2,9 +2,10 @@ import React from "react";
 import FeedNavBar from "../components/FeedNavBar";
 import { Sfeed } from "../components/studentfeed";
 import { Router } from "react-router-dom";
-import Feeddata from "../data/Feeddata"
+import Studentfeeddata from '../data/Studentfeeddata' 
 import { Postfeed } from "../components/postfeed";
-function createfeed(feeddata)
+
+function createfeed1(feeddata)
 {
     return(
         <Sfeed 
@@ -17,21 +18,19 @@ function createfeed(feeddata)
         />
     )
 } 
-const StudentFeed = (props) => {
-    return(
-       <div className>
-                 <div class="container">
-                 <br/>
-                 <Postfeed/>
-                 </div>
 
-                <div class = "container">            
-                   {Feeddata.map(createfeed)}
-                </div>
-        </div>
-    )
+const DonorFeed = (props) =>{
+  return(
+    <div className="App">
+            <div class="container">
+              <br/>
+              <Postfeed/>
+            </div>
 
+            <div class = "container">            
+              {Studentfeeddata.map(createfeed1)}
+            </div>
+    </div>
+ )    
 }
-
-
-export default StudentFeed
+export default DonorFeed
