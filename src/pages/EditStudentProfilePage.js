@@ -8,13 +8,14 @@ import EditProfileContactCard from "../components/EditProfileContactCard";
 import "../styles.css";
 
 const EditStudentProfile = () => {
-//   const [phone, setPhone] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [address, setAddress] = useState("");
-//   const [name, setName] = useState("");
-//   const [facebookAddress, setFacebookAddress] = useState("");
-//   const [twitterAddress, setTwitterAddress] = useState("");
-//   const [currentNeed, setCurrentNeed] = useState("");
+   const [phone, setPhone] = useState("");
+   const [email, setEmail] = useState("");
+   const [address, setAddress] = useState("");
+   const [name, setName] = useState("Mohsin Raza Jaffery");
+   const [status, setStatus] = useState("Looking for donations");
+   const [facebookAddress, setFacebookAddress] = useState("");
+   const [twitterAddress, setTwitterAddress] = useState("");
+   const [currentNeed, setCurrentNeed] = useState("");
 
   const degreeInfo = [
     {
@@ -53,7 +54,7 @@ const EditStudentProfile = () => {
   return (
     <div className="background">
       <EditProfileNavBar />
-      <EditProfileNameCard details={nameDeets} />
+      <EditProfileNameCard status={status} editstatus={setStatus} name={name} editname={setName} />
       <div className="container">
         <div className="container">
           <EditProfileContactCard contactInformation={contactInformation} />

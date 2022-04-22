@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../images/logoblue-2.png";
 import "../styles.css";
 
-const EditProfileNameCard = ({ details }) => {
+const EditProfileNameCard = ({ name, editname, status, editsttatus }) => {
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center">
@@ -22,13 +22,13 @@ const EditProfileNameCard = ({ details }) => {
           <div className="row">
           <b>Name</b>
             <h1 className="profileName">
-              <input type="text" className="form-control" />
+              <input value={name} type="text" className="form-control" onChange={(e)=>{editname(e.target.value)}}/>
             </h1>
           </div>
           <div className="row">
             <b>Status:</b>
             <h6 className="profileStatus">
-              <input type="text" className="form-control" />
+              <input value={status}  type="text" className="form-control" onChange={(e)=>{editsttatus(e.target.value)}} />
             </h6>
           </div>
         </div>
