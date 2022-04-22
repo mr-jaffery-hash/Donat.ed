@@ -6,21 +6,22 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import EditStudentProfile from "./pages/EditStudentProfilePage";
 import EditDonorProfile from "./pages/EditDonorProfile";
 import MainPage from "./pages/MainPage";
-import { Login } from "./pages/login";
+import { Login } from "./pages/Login";
 const App = () => {
   return (
-    <div>
       <Router>
         <Switch>
-          <Route path="/">
-           <Login/>
+          <Route  path="/">
+            <StudentFeed />
           </Route>
           <Route path="/studentfeed">
             <StudentFeed />
           </Route>
+          <Route exact path="/login" component={Login}>
+            <Login />
+          </Route>
         </Switch>
       </Router>
-    </div>
   );
 };
 

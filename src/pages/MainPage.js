@@ -1,8 +1,11 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MainPageNavBar from "../components/MainPageNavBar";
+import { Login } from "./Login";
 { }
 const MainPage = () => {
     return (
+        // <Router>
         <div>
             <MainPageNavBar />
             <header className="py-5 bg-image-full" style={{ backgroundImage: 'url(https://source.unsplash.com/wfh8dDlNFOk/1600x900)' }} >
@@ -25,7 +28,7 @@ const MainPage = () => {
                     <div className="row justify-content-center">
                         <div className="col-sm-3">
                             <button className="btn btn-info">
-                                Login as Student
+                                <Link to='/login'>Login as Student</Link>
                             </button>
                         </div>
                     </div>
@@ -49,8 +52,15 @@ const MainPage = () => {
                     </div>
                 </div>
             </section>
-
+{/* 
+        <Switch>
+            <Route path='/login'>
+                <Login />
+            </Route>
+        </Switch> */}
         </div>
+
+        // {/* </Router> */}
     )
 }
 
