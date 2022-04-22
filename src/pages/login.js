@@ -1,50 +1,43 @@
-import React from "react";
-export const Login = () =>{
-    return(
-        <div class="container logincont">
-        
-        <div class="row ">            
-        <h2 class="alignment"><strong>Login to Your Account</strong></h2>
+import React, {useState} from "react";
+import '../styles.css'
+export const Login = () => {
+
+    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('')
+
+    return (
+        <div className="container logincont background">
+            <div className="row ">
+                <h2 className="alignment"><strong>Login to Your Account</strong></h2>
+            </div>
+            <div className="row">
+                <h6 className="alignment"><small>Login using social network</small></h6>
+                <br />
+            </div>
+            <div className="row">
+                <div className="alignment">
+                    <a href="" >
+                        <img className="licon" src={require("../images/facebook(2).png")} alt="" />
+                    </a>
+                    <a href="">
+                        <img className="licon" src={require("../images/google-plus.png")} alt="" />
+                    </a>
+                </div>
+            </div>
+            <div className="row">
+                <h6 className="alignment lmarg"><small>--------------------OR--------------------</small></h6>
+            </div>
+            <div className="row alignment">
+                <input className="linp" value={email} type="text" placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}} />
+            </div>
+            <br />
+            <div className="row alignment">
+                <input className="linp" value={password} type="password" placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}} />
+            </div>
+            <br />
+            <div className="row  alignment">
+                <button className="lbtn" >Sign in</button>
+            </div>
         </div>
-        <div class="row">
-        <h6 class="alignment"><small>Login using social network</small></h6>
-        <br/>
-        </div>
-  <div class="row">
-      
-      <div class="alignment">
-            <a href="" >
-                <img class="licon" src= {require("../images/facebook(2).png")} alt=""  />
-            </a>
-            <a href="">
-                <img class="licon" src= {require("../images/google-plus.png")} alt="" /> 
-            </a>
-      </div>
-
-      
-  </div>
-   
-  <div class="row">
-
-    <h6 class="alignment lmarg"><small>--------------------OR--------------------</small></h6>
-   
-   </div>
-
-   <div class="row alignment">
-      <input class="linp" type="text" placeholder="Email" />
-   </div>
-   <br/>
-
-   <div class="row alignment">
-     <input class="linp" type = "password" placeholder="Password" />
-   </div>
-   <br/>
-
-   <div class="row  alignment">
-       <button class="lbtn" >Sign in</button>
-   </div>
-    
-
-</div>
     )
 }
