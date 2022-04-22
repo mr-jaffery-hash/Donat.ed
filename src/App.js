@@ -5,13 +5,14 @@ import StudentFeed from "./pages/StudentFeed";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import EditStudentProfile from "./pages/EditStudentProfilePage";
 import EditDonorProfile from "./pages/EditDonorProfile";
+import MainPage from "./pages/MainPage";
 const App = () => {
   return (
     <div>
       <Router>
         <Switch>
           <Route path="/">
-            <DonorProfilePage />
+            <MainPage />
           </Route>
           <Route path="/studentfeed">
             <StudentFeed />
