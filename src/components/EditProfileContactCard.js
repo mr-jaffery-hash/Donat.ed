@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-const EditProfileContactCard = ({ contactInformation }) => {
+const EditProfileContactCard = ({ name, setName, email, setEmail, address, setAddress, phone, setPhone }) => {
   return (
     <div className="cardStyles container">
       <div className="row">
@@ -17,7 +17,7 @@ const EditProfileContactCard = ({ contactInformation }) => {
             </span>
           </div>
           <div className="col-md-5">
-            <input className="form-control-sm editProfileInput" type="text" />
+            <input className="form-control-sm editProfileInput" type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/>
           </div>
           <div className="col-md-1">
             <span className="cardFont">
@@ -25,7 +25,7 @@ const EditProfileContactCard = ({ contactInformation }) => {
             </span>
           </div>
           <div className="col-md-5">
-            <input className="form-control-sm editProfileInput" type="text" />
+            <input className="form-control-sm editProfileInput" type="text" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
           </div>
         </div>
         <div className="row justify-content-between">
@@ -35,7 +35,7 @@ const EditProfileContactCard = ({ contactInformation }) => {
             </span>
           </div>
           <div className="col-md-5">
-            <input className="form-control-sm editProfileInput" type="text" />
+            <input className="form-control-sm editProfileInput" type="text"  value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
           </div>
           <div className="col-md-1">
             <span className="cardFont">
@@ -43,7 +43,7 @@ const EditProfileContactCard = ({ contactInformation }) => {
             </span>
           </div>
           <div className="col-md-5">
-            <input className="form-control-sm editProfileInput" type="text" />
+            <input className="form-control-sm editProfileInput" type="text" value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
           </div>
         </div>
       </div>

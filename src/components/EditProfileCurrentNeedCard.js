@@ -1,6 +1,6 @@
 import React from "react";
 
-const EditProfileCurrentNeedCard = ({ need,status}) => {
+const EditProfileCurrentNeedCard = ({ status, need, setNeed}) => {
   if (status!=="donor") {
     return (
       <div className="cardStyles container cardUpperDistance">
@@ -14,7 +14,7 @@ const EditProfileCurrentNeedCard = ({ need,status}) => {
           <div className="col-md-5">
           <span className="cardFont"><b>Amount RS</b>: 
           </span>
-          <input type='text' className="form-control-sm"/>
+          <input type='text' className="form-control-sm"  value={need} onChange={(e)=>{setNeed(e.target.value)}}/>
           </div>
         </div>
       </div>

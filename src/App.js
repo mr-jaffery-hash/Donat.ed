@@ -12,7 +12,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/">
-            <EditStudentProfile />
+            <MainPage />
           </Route>
           <Route path="/studentfeed">
             <StudentFeed />

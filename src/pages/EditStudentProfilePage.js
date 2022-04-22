@@ -8,16 +8,17 @@ import EditProfileContactCard from "../components/EditProfileContactCard";
 import "../styles.css";
 
 const EditStudentProfile = () => {
-   const [phone, setPhone] = useState("");
-   const [email, setEmail] = useState("");
-   const [address, setAddress] = useState("");
+   const [phone, setPhone] = useState("03322832283");
+   const [email, setEmail] = useState("mohsinrazajaffery@gmail.com");
+   const [address, setAddress] = useState("Link 1, DHA Main Boulevard, Lahore");
    const [name, setName] = useState("Mohsin Raza Jaffery");
    const [status, setStatus] = useState("Looking for donations");
    const [facebookAddress, setFacebookAddress] = useState("");
    const [twitterAddress, setTwitterAddress] = useState("");
-   const [currentNeed, setCurrentNeed] = useState("");
+   const [currentNeed, setCurrentNeed] = useState(500000);
 
-  const degreeInfo = [
+   
+  const degreeInfo =  [
     {
       certificate: "HSSC",
       verfied: false,
@@ -57,14 +58,14 @@ const EditStudentProfile = () => {
       <EditProfileNameCard status={status} editstatus={setStatus} name={name} editname={setName} />
       <div className="container">
         <div className="container">
-          <EditProfileContactCard contactInformation={contactInformation} />
+          <EditProfileContactCard name={name} setName={setName} email={email} setEmail={setEmail} address={address} setAddress={setAddress} phone={phone} setPhone={setPhone}/>
           <EditProfileEducationCard degreeInfo={degreeInfo} />
           <div className="row cardLowerDistance">
             <div className="col">
               <ConnectCard />
             </div>
             <div className="col left-padding-0" style={{ display: "flex" }}>
-              <EditProfileCurrentNeedCard need={Need} />
+              <EditProfileCurrentNeedCard need={currentNeed} setNeed={setCurrentNeed} status="student" />
             </div>
           </div>
         </div>
