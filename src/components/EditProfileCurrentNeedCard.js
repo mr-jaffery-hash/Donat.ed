@@ -33,7 +33,7 @@ const EditProfileCurrentNeedCard = ({ status, need, setNeed}) => {
           <div className="col-md-5">
           <span className="cardFont"><b>Amount RS</b>: 
           </span>
-          <input type='text' className="form-control-sm"/>
+          <input value={need}   type='text' className="form-control-sm" onChange={(e)=>{setNeed(e.target.value)}}/>
           </div>
         </div>
       </div>

@@ -8,13 +8,14 @@ import EditProfileContactCard from "../components/EditProfileContactCard";
 import "../styles.css";
 
 const EditStudentProfile = () => {
-//   const [phone, setPhone] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [address, setAddress] = useState("");
-//   const [name, setName] = useState("");
-//   const [facebookAddress, setFacebookAddress] = useState("");
-//   const [twitterAddress, setTwitterAddress] = useState("");
-//   const [currentNeed, setCurrentNeed] = useState("");
+  const [phone, setPhone] = useState("03002221111");
+  const [email, setEmail] = useState("hussainabbas2000@gmail.com");
+  const [address, setAddress] = useState("1 A1, Cantt, Lahore");
+  const [name, setName] = useState("Hussain Abbas");
+  const [facebookAddress, setFacebookAddress] = useState("");
+  const [twitterAddress, setTwitterAddress] = useState("");
+  const [amount, setAmount] = useState("200000");
+  const [status, setStatus] = useState('Can Donate')
 
  
 const nameDeets = {
@@ -42,17 +43,17 @@ const nameDeets = {
   return (
     <div className="background">
       <EditProfileNavBar />
-      <EditProfileNameCard details={nameDeets} />
+      <EditProfileNameCard  name={name} status={status}  editsttatus={setStatus}   />
       <div className="container">
         <div className="container">
-          <EditProfileContactCard contactInformation={contactInformation} />
+          <EditProfileContactCard  name={name} phone={phone} email={email} address={address} setName={setName} setEmail={setEmail} setPhone={setPhone} setAddress={setAddress}/>
           <EditProfileJobCard/>
           <div className="row cardLowerDistance">
             <div className="col">
               <ConnectCard />
             </div>
             <div className="col left-padding-0" style={{ display: "flex" }}>
-              <EditProfileCurrentNeedCard donation={CanDonate} status="donor" />
+              <EditProfileCurrentNeedCard need={amount} setNeed={setAmount} status="donor" />
             </div>
           </div>
         </div>
