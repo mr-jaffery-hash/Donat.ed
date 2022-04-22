@@ -186,5 +186,33 @@ hr {
   width: 50%;
 }
 
-
+.alignment{
+  display: flex;
+  justify-content: center;
+  
+}
+.lmarg{
+margin-top: 10px;
+}
+.logincont{
+  margin-top: 150px;
+}
+.linp{
+  width: 300px;
+   padding: 5px; 
+   border-radius: 5px; 
+   background-color: rgb(246, 240, 240);
+}
+@media screen and (max-width:312px)
+{
+    .linp{
+        width: 220px;
+    }
+}
+.lbtn{
+  width:150px; border-radius: 25px; padding: 5px; background-color: black; color: white;
+}
+.licon{
+  height: 50px;
+}
 

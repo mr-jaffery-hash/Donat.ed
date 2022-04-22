@@ -6,13 +6,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import EditStudentProfile from "./pages/EditStudentProfilePage";
 import EditDonorProfile from "./pages/EditDonorProfile";
 import MainPage from "./pages/MainPage";
+import { Login } from "./pages/login";
 const App = () => {
   return (
     <div>
       <Router>
         <Switch>
           <Route path="/">
-            <MainPage />
+           <Login/>
           </Route>
           <Route path="/studentfeed">
             <StudentFeed />
