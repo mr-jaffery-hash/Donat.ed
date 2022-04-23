@@ -24,14 +24,9 @@ const MainPageNavBar = () => {
                 ></a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Edit
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Logout
-                    </a>
+                    <Link to='/signup'>
+                      Sign up
+                    </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />

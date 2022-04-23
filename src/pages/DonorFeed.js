@@ -25,6 +25,7 @@ const DonorFeed = (props) =>{
             <div class="container">
               <br/>
               <Postfeed person="donor"/>
+              <br/>
             </div>
 
             <div class = "container">            
