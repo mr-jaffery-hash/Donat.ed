@@ -1,10 +1,14 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 import '../styles.css'
-export const Login = () => {
+export const Login = (props) => {
 
-    const [password, setPassword] = useState('')
-    const [email, setEmail] = useState('')
-
+    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [person,setPerson]=useState('');
+    useEffect(()=>{
+        setPerson(props.person)
+    });
     return (
         <div className="container logincont background">
             <div className="row ">
@@ -33,11 +37,23 @@ export const Login = () => {
             <br />
             <div className="row alignment">
                 <input className="linp" value={password} type="password" placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}} />
+            </div><br/><br/><br/>
+            <div className="row alignment">
+                
+                    <Link to="/forgetpassword">
+                        <center>
+                        <p><b>Forgot Your Password?</b></p>
+                        </center>
+                    </Link>
+                    
             </div>
             <br />
-            <div className="row  alignment">
+            {person==="donor"?<Link to="/donorfeed"><div className="row  alignment">
                 <button className="lbtn" >Sign in</button>
-            </div>
+            </div></Link>:<Link to="/studentfeed"><div className="row  alignment">
+                <button className="lbtn" >Sign in</button>
+            </div></Link>}
+            
         </div>
     )
 }

@@ -22,7 +22,7 @@ const StudentFeed = (props) => {
        <div className>
                  <div class="container">
                  <br/>
-                 <Postfeed/>
+                 <Postfeed person="student"/>
                  </div>
 
                 <div class = "container">            

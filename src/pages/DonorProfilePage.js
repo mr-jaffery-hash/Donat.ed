@@ -6,7 +6,7 @@ import ProfileWorkingInfoCard from "../components/ProfileWorkingInfoCard";
 import ConnectCard from "../components/ConnectCard";
 import CurrentNeedCard from "../components/CurrentNeedCard";
 import '../styles.css'
-
+import {Link} from "react-router-dom";
 const DonorProfilePage = () => {
     const nameDeets = {
         name: "Hussain Abbas",
@@ -34,6 +34,11 @@ const DonorProfilePage = () => {
         <div className="background">
           <ProfileNavBar />
           <ProfileNameCard details={nameDeets} />
+          <Link to="/donorprofileedit">
+          <center>
+            <p><strong>Edit Profile</strong></p>
+          </center>
+          </Link>
           <div className="container">
             <div className="container">
               <ProfileContactCard contactInformation={contactInformation} />

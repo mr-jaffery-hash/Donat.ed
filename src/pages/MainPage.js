@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MainPageNavBar from "../components/MainPageNavBar";
-import { Login } from "./Login";
+import { Login } from "./login";
 { }
 const MainPage = () => {
     return (
@@ -27,9 +27,11 @@ const MainPage = () => {
                 <div className="container background">
                     <div className="row justify-content-center">
                         <div className="col-sm-3">
+                        <Link to='/studentlogin'>
                             <button className="btn btn-info">
-                                <Link to='/login'>Login as Student</Link>
+                                Login as Student
                             </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -45,9 +47,11 @@ const MainPage = () => {
                 <div className="container background">
                     <div className="row justify-content-center">
                         <div className="col-sm-3">
+                            <Link to="/donorlogin">
                             <button className="btn btn-info">
                                 Login as Donor
                             </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

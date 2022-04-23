@@ -6,7 +6,7 @@ import ProfileEducationCard from "../components/ProfileEducationCard";
 import ConnectCard from "../components/ConnectCard";
 import CurrentNeedCard from "../components/CurrentNeedCard";
 import '../styles.css'
-
+import {Link} from "react-router-dom";
 const UserProfile = () => {
   const nameDeets = {
     name: "Mohsin Raza Jaffery",
@@ -45,6 +45,11 @@ const UserProfile = () => {
     <div className="background">
       <ProfileNavBar />
       <ProfileNameCard details={nameDeets} />
+      <Link to="/studentprofileedit">
+          <center>
+            <p><strong>Edit Profile</strong></p>
+          </center>
+          </Link>
       <div className="container">
         <div className="container">
           <ProfileContactCard contactInformation={contactInformation} />
