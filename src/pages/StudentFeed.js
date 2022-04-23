@@ -19,7 +19,7 @@ function createfeed(feeddata)
 } 
 const StudentFeed = (props) => {
     return(
-       <div className>
+       <div className='background'>
                  <div class="container">
                  <br/>
                  <Postfeed person="student"/>

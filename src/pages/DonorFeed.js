@@ -21,7 +21,7 @@ function createfeed1(feeddata)
 
 const DonorFeed = (props) =>{
   return(
-    <div className="App">
+    <div className="App background">
             <div class="container">
               <br/>
               <Postfeed person="donor"/>
