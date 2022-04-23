@@ -27,7 +27,7 @@ export const Postfeed = (props) => {
                     <textarea value={status} onChange={(e) => setStatus(e.target.value)} className="pform" placeholder="Post Something.." row="2" />
                     <hr />
                     <div className="bform">
-                        <input value={file} onChange={(e) => setTitle(e.target.files[0])} type="file" id="img" name="img" accept="image/*" />
+                        <input value={file} onChange={(e) => setFile(e.target.files[0])} type="file" id="img" name="img" accept="image/*" />
                         <button className="btn btn-dark">Post</button>
                         <br />
                         <br />
