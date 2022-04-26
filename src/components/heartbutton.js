@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import '../style1.css'
 export const Heart = () => {
+    
     const [likestatus, setLikeStatus] = useState('false')
     const [count, setCount] = useState(5    )
 

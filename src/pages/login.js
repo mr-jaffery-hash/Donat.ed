@@ -20,10 +20,10 @@ export const Login = (props) => {
             </div>
             <div className="row">
                 <div className="alignment">
-                    <a href="" >
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" >
                         <img className="licon" src={require("../images/facebook(2).png")} alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://www.google.com/intl/en-GB/gmail/about/">
                         <img className="licon" src={require("../images/google-plus.png")} alt="" />
                     </a>
                 </div>
@@ -32,11 +32,11 @@ export const Login = (props) => {
                 <h6 className="alignment lmarg"><small>--------------------OR--------------------</small></h6>
             </div>
             <div className="row alignment">
-                <input className="linp" value={email} type="text" placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}} />
+                <input className="linp" value={email} type="text" placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}} required />
             </div>
             <br />
             <div className="row alignment">
-                <input className="linp" value={password} type="password" placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}} />
+                <input className="linp" value={password} type="password" placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}} required />
             </div><br/><br/><br/>
             <div className="row alignment">
                 
@@ -50,7 +50,8 @@ export const Login = (props) => {
             <br />
             {person==="donor"?<Link to="/donorfeed"><div className="row  alignment">
                 <button className="lbtn" >Sign in</button>
-            </div></Link>:<Link to="/studentfeed"><div className="row  alignment">
+            </div></Link>:
+            <Link to="/studentfeed"><div className="row  alignment">
                 <button className="lbtn" >Sign in</button>
             </div></Link>}
             

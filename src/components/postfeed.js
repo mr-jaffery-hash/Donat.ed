@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from "react"
+import '../style2.css'
 import {Link} from "react-router-dom"
 export const Postfeed = (props) => {
     const [title, setTitle] = useState('')
@@ -14,6 +15,7 @@ export const Postfeed = (props) => {
                 <form id="postform">       
                     {person==="student"?<Link to="/studentprofile">
                     <a href="#" className="d-flex align-items-center " aria-expanded="false">
+                    
                         <img src="https://github.com/mdo.png" alt="" width="52" height="52" className="rounded-circle me-2" style={{ marginLeft: "5px" }} />
                     </a>
                     </Link>:<Link to="/donorprofile">
@@ -27,7 +29,7 @@ export const Postfeed = (props) => {
                     <textarea value={status} onChange={(e) => setStatus(e.target.value)} className="pform" placeholder="Post Something.." row="2" />
                     <hr />
                     <div className="bform">
-                        <input value={file} onChange={(e) => setFile(e.target.files[0])} type="file" id="img" name="img" accept="image/*" />
+                        <input  value={file} onChange={(e) => setFile(e.target.files[0])} type="file" id="img" name="img" accept="image/*" />
                         <button className="btn btn-dark">Post</button>
                         <br />
                         <br />

@@ -11,6 +11,7 @@ import ForgetPassword from "./pages/ForgetPassword";
 import ForgetPassword2 from "./pages/ForgetPassword2";
 import ForgetPassword3 from "./pages/ForgetPassword3";
 import DonorFeed from "./pages/DonorFeed";
+import Registration from './pages/registration'
 const App = () => {
   return (
     <Router>
@@ -19,6 +20,9 @@ const App = () => {
 
         <MainPage />
 
+      </Route>
+      <Route exact path="/signup">
+        <Registration/>
       </Route>
       <Route exact path="/studentlogin">
         <Login person="student"/>

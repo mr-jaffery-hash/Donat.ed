@@ -54,7 +54,7 @@ const EditStudentProfile = () => {
   };
   return (
     <div className="background">
-      <EditProfileNavBar />
+  
       <EditProfileNameCard status={status} editstatus={setStatus} name={name} editname={setName} />
       <div className="container">
         <div className="container">

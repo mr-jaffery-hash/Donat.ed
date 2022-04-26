@@ -4,6 +4,7 @@ import { Sfeed } from "../components/studentfeed";
 import { Router } from "react-router-dom";
 import Feeddata from "../data/Feeddata"
 import { Postfeed } from "../components/postfeed";
+import ProfileNavBar from "../components/ProfileNavBar";
 function createfeed(feeddata)
 {
     return(
@@ -20,9 +21,12 @@ function createfeed(feeddata)
 const StudentFeed = (props) => {
     return(
        <div className='background'>
-                 <div class="container">
+
+
+                 <div class="container">                 
                  <br/>
                  <Postfeed person="student"/>
+                 <br/>
                  </div>
 
                 <div class = "container">            
